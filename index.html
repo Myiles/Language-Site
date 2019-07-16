@@ -1,16 +1,29 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<title>Scripting Language</title>
+
+<title>Grammr</title>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
 <style>
+
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+
 body {font-size:16px;}
+
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+
 .w3-half img:hover{opacity:1}
+
 </style>
+
 <body>
 
 <!-- Sidebar/menu -->
@@ -23,8 +36,8 @@ body {font-size:16px;}
     <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
     <a href="./works.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">How Grammr Works</a>
     <a href="./howto.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">How to code using Grammr</a>
-    <a href="./simple" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Simple Examples</a>
-    <a href="./complex" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Complex Examples</a>
+    <a href="./simple.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Simple Examples</a>
+    <a href="./complex.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Complex Examples</a>
   </div>
 </nav>
 
@@ -34,210 +47,75 @@ body {font-size:16px;}
   <span>Grammr</span>
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>A program to learn true programming</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Directed towards students who need a platform to learn the basic syntax for coding</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="2b2363f4bac85302866d11c9121333c213aa43d9.png" style="width:100%" onclick="onClick(this)" alt="Java code">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
 
-    <div class="w3-half">
-      <img src="python.png" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
-  </div>
 
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
 
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>About Grammr</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Grammr is a programming language to help you take your first steps into the world of programming</p>
-    <p>We believe that coding should be a basic skill that every student has access to. This programming language was developed to help students in primary school and early levels of secondary school to learn the basics of code and code syntax. We are aimed to elimate the confusion of syntax/grammatical errors that students face when they code. This program allows students to get familiar with the basic syntax of coding. Similar to the English language, students will have a seemless experience with this language.</p>
-  </div>
-  
-  <!-- Designers -->
-  <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>A group of high schoolers.</p>
-    <p>We are a group of developers that identified a problem in programming. The problem is that students don't have a good beginner level program to enter the world of coding. Today platforms such as "scratch" exist. However we cannot recognize them as true coding because they don't implement the syntax of coding. Our names are Myles, Keshav, Yash, Alexander, Nikhil.</p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
-  </div>
 
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/IMG_20190706_115258.jpg" alt="Alexander" style="width:100%">
-        <div class="w3-container">
-          <h3>Alexander</h3>
-          <p class="w3-opacity">Fun Nerd</p>
-          <p> </p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Yash</h3>
-          <p class="w3-opacity">Website developer</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team3.jpg" alt="Yash" style="width:100%">
-        <div class="w3-container">
-          <h3>Nikhil</h3>
-          <p class="w3-opacity">Architect</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>Keshav</h3>
-          <p class="w3-opacity">Myles</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Myles</h3>
-          <p class="w3-opacity">Designer</p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Below we have packages to our software.<font color="red"> For every pro package bought, Grammr promises to pledge $8 of the $49.99 every month to families that can't afford treatment for juvenile arthritis. This pledge is until the end of July and is in honor of Juvenile Arthritis Awareness Month.</font></p>
-  </div>
 
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">Basic Tutorials</li>
-        <li class="w3-padding-16">5 hours of Tech Support</li>
-        <li class="w3-padding-16">3 GB of cloud storage</li>
-        <li class="w3-padding-16">Access database with only 1 device in session</li>
-        <li class="w3-padding-16">
-          <h2>Free</h2>
-          <span class="w3-opacity"></span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Advanced tutorials</li>
-        <li class="w3-padding-16">Unlimited Tech Support</li>
-        <li class="w3-padding-16">50 GB of cloud storage</li>
-        <li class="w3-padding-16">Access across 2 devices at a time</li>
-        <li class="w3-padding-16">Access to source code for open source modificaton</li>
-        <li class="w3-padding-16">Built in python translator</li>
-        <li class="w3-padding-16">
-          <h2>$ 49.99</h2>
-          <span class="w3-opacity">per year</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  <!-- Contact -->
-  <!--<div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
-  </div>
---!>
+
+
+
+
+
+
+
 
 <!-- End page content -->
+
 </div>
 
+
+
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://github.com/Phonzi/ScriptingLanguage" title="W3.CSS" target="_blank" class="w3-hover-opacity">github</a></p></div>
+
+
 
 <script>
+
 // Script to open and close sidebar
+
 function w3_open() {
+
   document.getElementById("mySidebar").style.display = "block";
+
   document.getElementById("myOverlay").style.display = "block";
+
 }
- 
+
+
+
 function w3_close() {
+
   document.getElementById("mySidebar").style.display = "none";
+
   document.getElementById("myOverlay").style.display = "none";
+
 }
+
+
 
 // Modal Image Gallery
+
 function onClick(element) {
+
   document.getElementById("img01").src = element.src;
+
   document.getElementById("modal01").style.display = "block";
+
   var captionText = document.getElementById("caption");
+
   captionText.innerHTML = element.alt;
+
 }
+
 </script>
 
+
+
 </body>
+
 </html>
