@@ -1,2 +1,2 @@
 # Language-Site
-The Site for out new coding language
+The Site for our new coding language
